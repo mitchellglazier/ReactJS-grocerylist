@@ -2,10 +2,10 @@ import React from 'react'
 
 const Item = ({id, name, price, complete, itemClick}) => {
   return (
-    <li
+    <div
     style={ complete ? {...styles.item, ...styles.complete} : styles.item}
     onClick={() => itemClick(id)}
-    >{name}</li>
+    >{name}</div>
   )
 }
 

@@ -16,7 +16,7 @@ class App extends Component {
     const { items } = this.state;
     return items.map(item => {
       return <Item key={item.id} {...item} itemClick={this.itemClick} />
-    })
+    });
   }
 
   itemClick = (id) => {
@@ -46,9 +46,9 @@ class App extends Component {
     return (
       <div>
         <ItemForm addItem={this.addItem} />
-        <ul>
+
           {this.listItems()}
-        </ul>
+
       </div>
     )
   }
