@@ -21,7 +21,6 @@ class App extends Component {
 
   itemClick = (id) => {
     const { items } = this.state;
-
     this.setState({
       items: items.map(item => {
         if (item.id === id) {
@@ -46,9 +45,7 @@ class App extends Component {
     return (
       <div>
         <ItemForm addItem={this.addItem} />
-
           {this.listItems()}
-
       </div>
     )
   }

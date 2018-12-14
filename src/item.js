@@ -5,7 +5,7 @@ const Item = ({id, name, price, complete, itemClick}) => {
     <div
     style={ complete ? {...styles.item, ...styles.complete} : styles.item}
     onClick={() => itemClick(id)}
-    >{name}</div>
+    >{name} - ${price}</div>
   )
 }
 
